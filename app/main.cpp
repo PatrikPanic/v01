@@ -6,4 +6,13 @@
 
 int main()
 {
+    int n;
+    std::cout << "input one integer ";
+    std::cin >> n;
+ 
+    std::cout << vsite::oop::v1::to_hex(n) << std::endl;
+
+    vsite::oop::v1::mult_table(n, std::cout);
+
+    return 0;
 }
