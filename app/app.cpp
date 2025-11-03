@@ -13,35 +13,24 @@ namespace vsite::oop::v1
 		return std::format("{:.2e}", d);
 	}
 
-	void mult_table(int n, std::ostream& ss) {
-
-		if (n == 0 || n > 20) {
-			ss << "";
-			return;
-		}
-
-		for (int i = 0; i <= n; i++) 
-		{
-			for (int j = 0; j <= n; j++) 
-			{
-				if (i == 0 && j == 0) 
-				{
+	void mult_table(int n, std::ostream& ss)
+	{
+		for (int i = 0; i <= n; i++) {
+			for (int j = 0; j <= n; j++) {
+				if (i == 0 && j == 0) {
 					ss << "0";
 					continue;
 				}
 
 				int result;
 
-				if (i == 0) 
-				{
+				if (i == 0) {
 					result = j;
 				}
-				else if (j == 0) 
-				{
+				else if (j == 0) {
 					result = i;
 				}
-				else 
-				{
+				else {
 					result = i * j;
 				}
 

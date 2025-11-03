@@ -14,5 +14,4 @@ int main()
 
     vsite::oop::v1::mult_table(n, std::cout);
 
-    return 0;
 }
