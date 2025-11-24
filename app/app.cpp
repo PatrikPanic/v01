@@ -16,7 +16,6 @@ namespace vsite::oop::v1
 	void mult_table(int n, std::ostream& ss)
 	{
 		if (n == 0 || n > 20) {
-			ss << "";
 			return;
 		}
 		for (int i = 0; i <= n; i++) {
